@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
-	namespace :spud do
-		namespace :admin do
-		end
-	end
+	match "search" => "search#index", :as => :search
    
 end
 
