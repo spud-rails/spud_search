@@ -7,11 +7,11 @@
 			<div class="result">
 				<%if result.class.name == 'SpudPost'%>
 					<h4><%=link_to result.title,blog_post_path(result.url_name)%></h4>
-					<p><%=truncate(result.content,:length => 200, :separator => ' ')%></p>
+					<p><%=truncate(sanitize(result.content),:length => 200, :separator => ' ')%></p>
 				<%elsif result.class.name == 'SpudPage'%>
 					<h4><%=link_to result.name,page_path(:id => result.url_name)%></h4>
 					
-					<p><%=truncate(result.meta_description,:length => 200, :separator => ' ')%></p>
+					<p><%=truncate(sanitize(result.meta_description),:length => 200, :separator => ' ')%></p>
 					
 				<%end%>
 			</div>
