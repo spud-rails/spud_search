@@ -1,9 +1,9 @@
 require 'spud_core'
-require 'spud_search/searchable'
 
 require 'acts_as_indexed'
 module Spud
 	module Search
+
 		 class Engine < Rails::Engine
 			engine_name :spud_search
 			
