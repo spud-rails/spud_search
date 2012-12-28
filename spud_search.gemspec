@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.markdown"]
   s.test_files = Dir["test/**/*"]
-  
+
   s.add_dependency "rails", "~> 3.2.3"
-  s.add_dependency 'spud_core', ">= 0.8.0"
+  s.add_dependency 'spud_core', ">= 0.10.0"
   s.add_dependency 'acts_as_indexed', ">= 0.7.7"
 
   s.add_development_dependency 'mysql2', '0.3.11'
