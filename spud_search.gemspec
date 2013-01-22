@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Spud::Search::VERSION
   s.authors     = ["David Estes"]
   s.email       = ["destes@redwindsw.com"]
-  s.homepage    = "http://github.com/davydotcom/spud_search"
+  s.homepage    = "http://github.com/spud-rails/spud_search"
   s.summary     = "Acts as indexed adapter for spud core for quick searches of pages and blogs"
   s.description = "Spud Search is a base search interface for use on spud core"
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.3"
-  s.add_dependency 'spud_core', ">= 0.10.0"
+  s.add_dependency 'spud_core', ">= 0.9.10"
   s.add_dependency 'acts_as_indexed', ">= 0.7.7"
 
   s.add_development_dependency 'mysql2', '0.3.11'
